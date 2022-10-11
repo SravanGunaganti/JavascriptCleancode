@@ -14,7 +14,8 @@ const currentDate = new Date();
 const firstName = 'Sravan';
 const lastName = 'Gunaganti';
 
-# ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 # 2.Don't add unneeded context
 
@@ -45,7 +46,6 @@ function paintCar(car, color) {
 }
 
 
-# ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 3.Function names should say what they do.
 
@@ -70,9 +70,9 @@ const Person = {
 function getFullName(person) {
   return `${person.firstName} ${person.lastName}`
 }
-  
 
-# --------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 # 4.Use default arguments instead of short circuiting or conditionals
 
@@ -93,7 +93,6 @@ function createMicrobrewery(name = "sravan") {
 
 
 
-# ---------------------------------------------------------------------------------------------------------------------------------------------------------
 # 5.Remove commented code
 
 Bad:
