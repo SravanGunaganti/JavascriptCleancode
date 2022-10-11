@@ -1,6 +1,6 @@
-// Javascript cleancode practice
+#Javascript cleancode practice
 
-// 1.Use meaningful and pronounceable variable names
+## 1.Use meaningful and pronounceable variable names
 
 //Bad:
 
@@ -17,7 +17,7 @@ const lastName = 'Gunaganti';
 
 
 
-// 2.Don't add unneeded context
+## 2.Don't add unneeded context
 
 //If your class/object name tells you something, don't repeat that in your variable name.
 
@@ -47,7 +47,7 @@ function paintCar(car, color) {
 
 
 
-// 3.Function names should say what they do.
+## 3.Function names should say what they do.
 
 //Bad:
 
@@ -74,7 +74,7 @@ function getFullName(person) {
 
 
 
-// 4.Use default arguments instead of short circuiting or conditionals
+## 4.Use default arguments instead of short circuiting or conditionals
 
 /*Default arguments are often cleaner than short circuiting. Be aware that if you use them, your function will only provide default values for undefined arguments. Other "falsy" values such as '', "", false, null, 0, and NaN, will not be replaced by a default value.*/
 
@@ -93,7 +93,7 @@ function getUserData(name = "sravan") {
 
 
 
-// 5.Remove commented code
+## 5.Remove commented code
 
 //Bad:
 
