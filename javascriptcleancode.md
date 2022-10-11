@@ -2,26 +2,27 @@
 
 ## 1.Use meaningful and pronounceable variable names
 
-//Bad:
+```
+Bad:
 
 const yyyymmdstr = new Date();
 const fname = 'Sravan';
 const lname = 'Gunaganti';
 
-//Good:
+Good:
 
 const currentDate = new Date();
 const firstName = 'Sravan';
 const lastName = 'Gunaganti';
-
+```
 
 
 
 ## 2.Don't add unneeded context
+```
+If your class/object name tells you something, don't repeat that in your variable name.
 
-//If your class/object name tells you something, don't repeat that in your variable name.
-
-//Bad:
+Bad:
 
 const Car = {
   carMake: "Honda",
@@ -33,7 +34,7 @@ function paintCar(car, color) {
   car.carColor = color;
 }
 
-//Good:
+Good:
 
 const Car = {
   make: "Honda",
@@ -44,12 +45,12 @@ const Car = {
 function paintCar(car, color) {
   car.color = color;
 }
-
+```
 
 
 ## 3.Function names should say what they do.
-
-//Bad:
+```
+Bad:
 
 const Person = {
     firstName: "Sravan",
@@ -60,7 +61,7 @@ function name(person) {
   return `${person.firstName} ${person.lastName}`
 }
 
-//Good:
+Good:
 
 const Person = {
   firstName: "Sravan",
@@ -70,38 +71,40 @@ const Person = {
 function getFullName(person) {
   return `${person.firstName} ${person.lastName}`
 }
-
+```
 
 
 
 ## 4.Use default arguments instead of short circuiting or conditionals
+```
+Default arguments are often cleaner than short circuiting. Be aware that if you use them, your function will only provide default values for undefined arguments. Other "falsy" values such as '', "", false, null, 0, and NaN, will not be replaced by a default value.
 
-/*Default arguments are often cleaner than short circuiting. Be aware that if you use them, your function will only provide default values for undefined arguments. Other "falsy" values such as '', "", false, null, 0, and NaN, will not be replaced by a default value.*/
-
-//Bad:
+Bad:
 
 function getUserData(name) {
   const userName = name || "sravan;
   // ...
 }
 
-//Good:
+Good:
 
 function getUserData(name = "sravan") {
   // ...
 }
-
+```
 
 
 ## 5.Remove commented code
 
-//Bad:
+```
+Bad:
 
 doSomething();
 // doOtherStuff();
 //doSomeMoreStuff();
 
 
-//Good:
+Good:
 
 doSomething();
+```
