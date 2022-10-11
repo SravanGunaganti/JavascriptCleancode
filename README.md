@@ -77,7 +77,9 @@ function getFullName(person) {
 
 ## 4.Use default arguments instead of short circuiting or conditionals
 ```
-Default arguments are often cleaner than short circuiting. Be aware that if you use them, your function will only provide default values for undefined arguments. Other "falsy" values such as '', "", false, null, 0, and NaN, will not be replaced by a default value.
+Default arguments are often cleaner than short circuiting. 
+Be aware that if you use them, your function will only provide default values for undefined arguments. 
+Other "falsy" values such as '', "", false, null, 0, and NaN, will not be replaced by a default value.
 
 Bad:
 
